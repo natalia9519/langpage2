@@ -1,0 +1,203 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.landingP{
+    height: 80vh;
+}
+
+body {
+    background: linear-gradient(#EE70D1 0%, #FFF 100%);
+    background-repeat: no-repeat;
+}
+header {
+display:flex;
+justify-content: space-between;;
+align-items: center;
+}
+.navLinks {
+list-style: none;
+display:flex;
+font-family: 'Inria Serif';
+}
+.navLinks li{
+   margin-left: 16px;
+}
+.navLinks li a{
+    text-decoration: none;
+    
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 30px;
+    
+}
+.navLinks li:hover {
+background-color: aqua;
+}
+
+.star{
+width: 120px;
+height: 118px;
+flex-shrink: 0;
+float: left;
+margin-top: 20px;
+margin-left: 20px;
+
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerText {
+    font-size: 80px;
+    font-family: 'Irish Grover';
+    background: linear-gradient(180deg, #E319E7 0%, #000 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-right: 129px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    
+}
+hr {
+    position: absolute;
+    top: 88px;
+    right: 0px;
+    width: 50%;
+        
+  }
+.mikuOferta{
+    border-radius: 400px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 407px;
+    height: 400px;
+    margin-right: 100px;
+    }
+    .start2{
+    width: 120px;
+    height: 118px;
+    position: absolute; 
+    top: 427px;
+    right: 96px;
+        
+        }
+article{
+    padding-left: 10px;
+}
+.discount{
+    color: #000;
+    text-align: justify;
+    font-family: Irish Grover;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #FFF;
+    border: #000 solid;
+    border-radius: 7px;
+    margin-left: 100px;
+    display: inline-block;
+    padding: 34px;
+    
+    }
+.buttonRegistration .bRegis{
+        width: 300px;
+        height: 100px;
+        border-radius: 4px;
+        background: #3D023E;
+        
+        }
+.bRegis{
+        color:#FFF;
+        text-align: center;
+        font-family: 'Inria Serif';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px 0px 0px 400px;
+        margin-top: 50px;
+}
+
+.anya{
+    max-width: 700px;
+    height: 441px;
+    margin-left: 400px;
+    margin-bottom: 0px;
+}
+   .vectores{
+    margin-bottom: 27px;
+    margin-right: 34px;
+    display: flex;
+    justify-content: flex-end;
+   margin-top: 40px;
+   }
+   .socialMedia{
+    padding-left: 20px;
+   }
+.footer1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.form{
+   
+    top: 271px;
+    left: 50%;
+}
+.formGroup{
+    color: #000;
+    text-align: justify;
+    font-family: 'Inria Serif';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #FFF;
+    border: #000 solid;
+    margin-left: 350px;
+    display: inline-block;
+    padding: 50px 70px 50px 90px;
+}
+
+  .buttonSend{
+        border-radius: 4px;
+        background: #3D023E;
+        color:#FFF;
+        width: 121px;
+        height: 48px;
+        text-align: center;
+        font-family: 'Inria Serif';
+        font-size: 20px;
+        border-radius: 0px;
+        margin-right: 5px;
+        
+  }
+
+.textAboutUs{
+    color: #000;
+    text-align: justify;
+    font-family: Inria Serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #FFF;
+    border: #000 solid;
+    border-radius: 0px;
+    margin-right: 100px;
+    padding: 34px;
+    padding-left: 50px;
+}
+.mikuAboutUs{
+    width: 407px;
+    height: 528px;
+    margin-left: 72px;
+}
