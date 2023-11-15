@@ -38,8 +38,8 @@ background-color: aqua;
 }
 
 .star{
-width: 120px;
-height: 118px;
+width: 7.5rem;
+height: 7.375rem;
 flex-shrink: 0;
 float: left;
 margin-top: 20px;
@@ -75,13 +75,13 @@ hr {
 .mikuOferta{
     border-radius: 400px;
     background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    width: 407px;
-    height: 400px;
+    width: 25.438rem;
+    height: 25rem;
     margin-right: 100px;
     }
     .start2{
-    width: 120px;
-    height: 118px;
+    width: 7.5rem;
+    height: 7.375rem;
     position: absolute; 
     top: 427px;
     right: 96px;
@@ -107,8 +107,8 @@ article{
     
     }
 .buttonRegistration .bRegis{
-        width: 300px;
-        height: 100px;
+        width: 18.75rem;
+        height: 6.25rem;
         border-radius: 4px;
         background: #3D023E;
         
@@ -126,8 +126,8 @@ article{
 }
 
 .anya{
-    max-width: 700px;
-    height: 441px;
+    max-width: 43.75rem;
+    height: 27.563rem;
     margin-left: 400px;
     margin-bottom: 0px;
 }
@@ -149,7 +149,7 @@ article{
 
 .form{
    
-    top: 271px;
+    top: 16.938rem;
     left: 50%;
 }
 .formGroup{
@@ -162,7 +162,7 @@ article{
     line-height: normal;
     background-color: #FFF;
     border: #000 solid;
-    margin-left: 350px;
+    margin-left: 21.875rem;
     display: inline-block;
     padding: 50px 70px 50px 90px;
 }
@@ -171,13 +171,13 @@ article{
         border-radius: 4px;
         background: #3D023E;
         color:#FFF;
-        width: 121px;
-        height: 48px;
+        width: 7.563rem;
+        height: 3rem;
         text-align: center;
         font-family: 'Inria Serif';
-        font-size: 20px;
+        font-size: 1.25rem;
         border-radius: 0px;
-        margin-right: 5px;
+        margin-right: 0.313rem;
         
   }
 
@@ -185,19 +185,19 @@ article{
     color: #000;
     text-align: justify;
     font-family: Inria Serif;
-    font-size: 17px;
+    font-size: 1.063rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     background-color: #FFF;
     border: #000 solid;
     border-radius: 0px;
-    margin-right: 100px;
-    padding: 34px;
-    padding-left: 50px;
+    margin-right: 6.25rem;
+    padding: 2.125rem;
+    padding-left: 3.125rem;
 }
 .mikuAboutUs{
-    width: 407px;
-    height: 528px;
-    margin-left: 72px;
+    width: 25.438rem;
+    height: 33rem;
+    margin-left: 4.5rem;
 }
