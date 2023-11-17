@@ -1,365 +1,510 @@
-*{
-    margin:0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inria Serif';
+ 
+  
 }
-.landingP{
-    height: 80vh;
-}
-           
+
+/*.landingP {
+  height: 80vh;
+}*/
+
 /* HEADER*/
 header {
-    display:flex;
-    justify-content: space-between;;
-    align-items: center;
-    }
+  display: flex;
+  justify-content: space-between;
+  ;
+  align-items: center;
+  height: 10rem;
+}
+.star {
+  width: 7.5rem;
+  height: 7.375rem;
+  flex-shrink: 0;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.header-text {
+  font-size: 80px;
+  font-family: 'Irish Grover';
+  background: linear-gradient(180deg, #E319E7 0%, #000 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-right: 129px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+
+}
+
 .navLinks {
-    list-style: none;
-    display:flex;
-    font-family: 'Inria Serif';
-    }
-.navLinks li{
-       margin-left: 16px;
-    }
-.navLinks li a{
-        text-decoration: none;
-        
-    }
+  list-style: none;
+  display: flex;
+  font-family: 'Inria Serif';
+}
+
+.navLinks li {
+  margin-left: 16px;
+}
+
+.navLinks li a {
+  text-decoration: none;
+
+}
+
 a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 30px;
-        
-    }
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 30px;
+
+}
+
 .navLinks li:hover {
-    background-color: aqua;
-    }
+  background-color: aqua;
+}
+
 .not-look {
-        display: none !important;
-      
-      }
-      /* ----------------- ESTILOS MENU HAMBURGUESA ----------------- */
+  display: none !important;
+
+}
+
+/* ----------------- ESTILOS MENU HAMBURGUESA ----------------- */
 .look-container {
-    position: relative;
-  }
-  
-  .look-list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: rgba(0, 109, 119, 0.9); /* Fondo semi-transparente */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    z-index: 999; /* Ajusta el índice z para asegurarte de que esté por encima de otros elementos */
-  }
-  
-  .look-list li {
-    padding: 20px;
-    text-align: center;
-    font-size: 1.5em; /* Aumenta el tamaño de la fuente en un 50% */
-    font-weight: bold; /* Aumenta el grosor de la fuente */
-    position: relative;
-    color: #fff; /* Color del texto */
-  }
-  
-  .look-list li:hover {
-    background: linear-gradient(to bottom, rgba(226, 149, 120, 0.9), rgba(226, 149, 120, 0.6));
-  }
-  
-  .look-list li::before,
-  .look-list li::after {
-    content: "";
-    position: absolute;
-    height: 5px; /* Grosor de las líneas de sombra */
-    background-color: rgba(226, 149, 120, 0.5); /* Color semi-transparente basado en #e29578 para las sombras chulas */
-    width: calc(100% + 40px); /* Ancho ajustado para extenderse más allá del contenido del li */
-    left: -20px; /* Desplaza a la izquierda la mitad del ancho adicional */
-  }
-  
-  .look-list li::before {
-    top: 0;
-  }
-  
-  .look-list li::after {
-    bottom: 0;
-  }
-  
-  .not-look:hover {
-    cursor: pointer;
-    background-color: #83C5BE;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  /* ----------------- FINAL ESTILOS MENU HAMBURGUESA ----------------- */
-/* FIN HEADER*/
+  position: relative;
+}
+
+.look-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 109, 119, 0.9);
+  /* Fondo semi-transparente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 999;
+  /* Ajusta el índice z para asegurarte de que esté por encima de otros elementos */
+}
+
+.look-list li {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  /* Aumenta el tamaño de la fuente en un 50% */
+  font-weight: bold;
+  /* Aumenta el grosor de la fuente */
+  position: relative;
+  color: #fff;
+  /* Color del texto */
+}
+
+.look-list li:hover {
+  background: linear-gradient(to bottom, rgba(226, 149, 120, 0.9), rgba(226, 149, 120, 0.6));
+}
+
+.look-list li::before,
+.look-list li::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  /* Grosor de las líneas de sombra */
+  background-color: rgba(226, 149, 120, 0.5);
+  /* Color semi-transparente basado en #e29578 para las sombras chulas */
+  width: calc(100% + 40px);
+  /* Ancho ajustado para extenderse más allá del contenido del li */
+  left: -20px;
+  /* Desplaza a la izquierda la mitad del ancho adicional */
+}
+
+.look-list li::before {
+  top: 0;
+}
+
+.look-list li::after {
+  bottom: 0;
+}
+
+.not-look:hover {
+  cursor: pointer;
+  background-color: #83C5BE;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* ----------------- FINAL ESTILOS MENU HAMBURGUESA ----------------- */
+/*---------------------------------- FIN HEADER------------------------------*/
 
 body {
-    background: linear-gradient(#EE70D1 0%, #FFF 100%);
-    background-repeat: no-repeat;
+  background: linear-gradient(#EE70D1 0%, #FFF 100%);
+  background-repeat: no-repeat;
+}
+
+.main-landing-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30rem;
+  
+}
+
+.discount {
+  color: #000;
+  text-align: justify;
+  font-family: Irish Grover;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #FFF;
+  border: #000 solid;
+  border-radius: 7px;
+  margin-left: 6rem;
+  display: inline-block;
+  padding: 34px;
+  width: 45%;
+}
+
+.button-registration .b-regis {
+  width: 20rem;
+  height: 8rem;
+  border-radius: 4px;
+  background: #3D023E;
+  margin-left: 50%;
+  padding: 1rem;
+}
+
+.b-regis {
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inria Serif';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+ /* margin: 0px 0px 0px 400px;*/
+  margin-top: 2rem;
+}
+
+.position-1{
+  display: flex;
+  width: 30rem;
+  height: 30rem;
+}
+
+.start-2 {
+  width: 7.5rem;
+  height: 7.375rem;
+  position: absolute;
+  margin-right: 1rem;
+  top: 427px;
+  right: 2rem;
+  z-index: 30;
+}
+
+.miku-oferta {
+  border-radius: 400px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  width: 25em;
+  height: 26em;
+  margin-right: 2rem;  
+}
+
+.main-about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
-.star{
-width: 7.5rem;
-height: 7.375rem;
-flex-shrink: 0;
-float: left;
-margin-top: 20px;
-margin-left: 20px;
-
-}
-main{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.headerText {
-    font-size: 80px;
-    font-family: 'Irish Grover';
-    background: linear-gradient(180deg, #E319E7 0%, #000 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    margin-right: 129px;
-    font-style: normal;
-    font-weight: 100;
-    line-height: normal;
-    
-}
 
 
 
 hr {
-    position: absolute;
-    top: 88px;
-    right: 0px;
-    width: 50%;
-        
-  }
-.mikuOferta{
-    border-radius: 400px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    width: 25.438rem;
-    height: 25rem;
-    margin-right: 100px;
-    }
-    .start2{
-    width: 7.5rem;
-    height: 7.375rem;
-    position: absolute; 
-    top: 427px;
-    right: 96px;
-        
-        }
-article{
-    padding-left: 10px;
-}
-.discount{
-    color: #000;
-    text-align: justify;
-    font-family: Irish Grover;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background-color: #FFF;
-    border: #000 solid;
-    border-radius: 7px;
-    margin-left: 100px;
-    display: inline-block;
-    padding: 34px;
-    
-    }
-.buttonRegistration .bRegis{
-        width: 18.75rem;
-        height: 6.25rem;
-        border-radius: 4px;
-        background: #3D023E;
-        
-        }
-.bRegis{
-        color:#FFF;
-        text-align: center;
-        font-family: 'Inria Serif';
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin: 0px 0px 0px 400px;
-        margin-top: 50px;
+  position: absolute;
+  top: 88px;
+  right: 0px;
+  width: 50%;
+
 }
 
-.anya{
-    max-width: 43.75rem;
-    height: 27.563rem;
-    margin-left: 400px;
-    margin-bottom: 0px;
+
+
+
+
+ /*article {
+ padding-left: 10px;
+}*/
+
+
+
+
+
+
+
+
+
+
+.form {
+
+  top: 16.938rem;
+  left: 50%;
 }
-   .vectores{
-    margin-bottom: 27px;
-    margin-right: 34px;
+
+.formGroup {
+  color: #000;
+  text-align: justify;
+  font-family: 'Inria Serif';
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #FFF;
+  border: #000 solid;
+  margin-left: 21.875rem;
+  display: inline-block;
+  padding: 50px 70px 50px 90px;
+}
+
+.buttonSend {
+  border-radius: 4px;
+  background: #3D023E;
+  color: #FFF;
+  width: 7.563rem;
+  height: 3rem;
+  text-align: center;
+  font-family: 'Inria Serif';
+  font-size: 1.25rem;
+  border-radius: 0px;
+  margin-right: 0.313rem;
+
+}
+
+.textAboutUs {
+  color: #000;
+  text-align: justify;
+  font-family: Inria Serif;
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #FFF;
+  border: #000 solid;
+  border-radius: 0px;
+  margin-right: 6.25rem;
+  padding: 2.125rem;
+  padding-left: 3.125rem;
+}
+
+.mikuAboutUs {
+  width: 25.438rem;
+  height: 33rem;
+  margin-left: 4.5rem;
+}
+
+/* FOOTER*/
+
+.footer-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.figure-rabbit {
+  max-width: 43.75rem;
+  height: 27.563rem;
+  margin-left: 100%;
+  margin-bottom: 0rem;
+}
+
+.vectores {
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.social-media {
+  padding-left: 20px;
+}
+
+/* FIN FOOTER*/
+
+@media screen and (max-width: 1023px) {
+
+  /*HEADER*/
+  header {
+    width: auto;
+  }
+  .header-text {
+    font-size: 4rem;
+   /* margin-right: 129px;*/
+   /* font-weight: 100;*/  
+  }
+
+  .discount {
+    text-align: justify;
+    font-size: 30px;
+  /*  font-weight: 400;*/
+    margin-left: 2rem;
+   /* display: inline-block;*/
+    padding: 34px;
+    width: 45%;
+  }
+  
+  .button-registration .b-regis {
+    margin-left: 10%;
+    padding: 1rem;
+  }
+
+  .start-2 {
+    width: 7.5rem;
+    height: 7.375rem;
+    position: absolute;
+   /* margin-right: 2rem;*/
+   top: 427px;
+   right: 2rem;
+  z-index: 30;
+  }
+  
+  .miku-oferta {
+    width: 20rem;
+    height: 21rem;
+   margin-right: 5rem;
+
+  }
+
+  .main-landing-page {
     display: flex;
-    justify-content: flex-end;
-   margin-top: 40px;
-   }
-   .socialMedia{
-    padding-left: 20px;
-   }
-.footer1 {
+    justify-content: space-between;
+    align-items: center;
+    height: 30rem;
+    
+  }
+
+
+  .show {
+    display: block !important;
+    font-size: xx-large;
+  }
+
+  .icons-container {
+    display: none;
+  }
+
+  ul {
+    display: none;
+  }
+
+  .logo-container {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+  /* FOOTER*/
+
+  .footer-1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-.form{
-   
-    top: 16.938rem;
-    left: 50%;
-}
-.formGroup{
-    color: #000;
-    text-align: justify;
-    font-family: 'Inria Serif';
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background-color: #FFF;
-    border: #000 solid;
-    margin-left: 21.875rem;
-    display: inline-block;
-    padding: 50px 70px 50px 90px;
-}
-
-  .buttonSend{
-        border-radius: 4px;
-        background: #3D023E;
-        color:#FFF;
-        width: 7.563rem;
-        height: 3rem;
-        text-align: center;
-        font-family: 'Inria Serif';
-        font-size: 1.25rem;
-        border-radius: 0px;
-        margin-right: 0.313rem;
-        
   }
 
-.textAboutUs{
-    color: #000;
-    text-align: justify;
-    font-family: Inria Serif;
-    font-size: 1.063rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    background-color: #FFF;
-    border: #000 solid;
-    border-radius: 0px;
-    margin-right: 6.25rem;
-    padding: 2.125rem;
-    padding-left: 3.125rem;
-}
-.mikuAboutUs{
-    width: 25.438rem;
-    height: 33rem;
-    margin-left: 4.5rem;
-}
-@media screen and (max-width: 1023px) {
+  .figure-rabbit {
+    max-width: 33.75rem;
+    height: 17.563rem;
+    margin-left: 5rem;
+    margin-bottom: 0rem;
+  }
 
-        /*HEADER*/
-        header {
-          width: auto;
-        }
-      
-        .show {
-          display: block !important;
-          font-size: xx-large;
-        }
-      
-        .icons-container {
-          display: none;
-        }
-      
-        ul {
-          display: none;
-        }
-      
-        .logo-container {
-          position: absolute;
-          margin-left: 10px;
-          margin-top: 50px;
-        }
-      
-        /*SECTIONS*/
-        .section-a {
-          display: flex;
-          flex-direction: column;
-        }
-      
-        .section-b {
-          display: flex;
-          flex-direction: column-reverse;
-        }
-      
-        .social-media-icons {
-          font-size: 2em;
-          margin-left: 0px;
-          margin-bottom: 10px;
-        }
-      
-        /*FOOTER*/
-        .social-media-icons {
-          font-size: 2em;
-          margin-left: 0px;
-          margin-bottom: 10px;
-        }
-      
-        .left-div p {
-          font-size: 1rem;
-        }
+  .vectores {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+   /* display: flex;*/
+    /*justify-content: flex-end;*/
+    margin-left: 1rem;
+  }
+
+  .social-media {
+    width: 4rem;
+    padding-left: 1rem;
+  }
+
+  /* FIN FOOTER*/
+
 }
-      
+
 @media screen and (max-width: 767px) {
-        .rectangle-1 {
-          width: 0%;
-          background: none;
-        }
-      
-        .h1-day {
-          font-size: 4rem;
-          line-height: 1.2;
-        }
-      
-        .section-a {
-          margin: 4rem 0;
-          padding: 0 4rem;
-        }
-      
-        .image-day {
-          width: 18.75rem;
-          height: 21.25rem;
-        }
-      
-        .text-day {
-          font-family: "Khand-Regular", Helvetica;
-          color: #000000;
-          font-size: 24px;
-          letter-spacing: 0;
-          line-height: normal;
-          width: 50%;
-        }
-      
-        .info-a {
-          font-size: 22px;
-        }
-      
-        .rectangle-2 {
-          width: 0%;
-          background: none;
-        }
+  .header-text {
+    font-size: 3rem;
+   /* margin-right: 129px;*/
+   /* font-weight: 100;*/  
+  }
+  .main-landing-page {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+    height: 50rem;
+    align-items: center;
+  }
+.position-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-2 {
+ left: 5rem;
+}
+
+.discount{
+  width: 45%;
+  margin-top: 2rem;
+  margin-left: 20%;
+}
+
+.button-registration .b-regis {
+  margin-left: 20%;
+  padding: 1rem;
+}
+  /* FOOTER*/
+
+  .footer-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  .figure-rabbit {
+    max-width: 33.75rem;
+    height: 17.563rem;
+    margin-left: 5%;
+    margin-bottom: 0rem;
+    align-items: center;
+   
+  }
+
+  .vectores {
+    margin-bottom: 1rem;
+    /* margin-right: 1rem;
+/*  display: flex;
+  justify-content: flex-end;
+/* margin-left: 5px;*/
+  }
+
+  .social-media {
+    padding-left: 1rem;
+    width: 2rem;
+  }
+
+  /* FIN FOOTER*/
 }
