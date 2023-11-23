@@ -1,61 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navfot.css">
-    <link href='https://fonts.googleapis.com/css?family=Irish Grover'
-      rel='stylesheet'>
-    <!--He tenido que copiar este link para tener la letra irish NO BORRAR-->
-    <link href='https://fonts.googleapis.com/css?family=Inria Serif'
-      rel='stylesheet'>
-    <!--He tenido que copiar este link para tener la letra inria NO BORRAR-->
-    <title>Muñecas frikis rosas</title>
+    <script src="https://kit.fontawesome.com/60be6c00de.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
 
-  </head>
-  <body>
-
-      <header>
         <img src="./imagenes/ESTRELLA.png"
-          alt="El logo de la empresa es una estrella con una N dentro"
-          class="star">
-        <h1 class="header-text">FIGURAS EN OFERTA</h1>
-      </header>
+            alt="El logo de la empresa es una estrella con una N dentro"
+            class="star">
 
-      <main class="main-landing-page">
-        <article>
-          <div class="discount">Descuento <b>20%</b> en tu primera compra
-            de figuras. Miku te espera
-          </div>
-          <br>
-          <div class="button-registration">
-            <a href="./formulario.html">
-              <button class="b-regis">Registrate aquí</button>
-            </a>
-          </div>
+        <hr>
+        <div class="nav-links">
+            <ul class="nav1">
+                <li><a href="./inicio.html">Inicioa</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./Ofertas langpage.html">Ofertas</a></li>
+                <li><a href="./Ofertas langpage.html">Registro</a></li>
+            </ul>
+        </div>
 
-        </article>
-        <figure class="position-1">
-          <img src="./imagenes/star-2.png" alt="estrella con un -20%"
-            class="start-2">
-          <img src="./imagenes/muñeca-1.png"
-            alt="imagen de una figura en tamaño HQS"
-            class="miku-oferta">
+        <div class="show">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden-container">
+            <ul class="hidden-list">
+                <li><a href="./inicio.html" class="try">Inicio</a></li>
+                <li><a href="./nosotros.html" class="try">Nosotros</a></li>
+                <li><a href="./Ofertas langpage.html" class="try">Ofertas</a></li>
+                <li><a href="./formulario.html" class="try">Registro</a></li>
+            </ul>
+        </div>
 
-        </figure>
+    </header>
+<section class="section-a-inicio">
+    
+    <div class="carousel" >
+        <button class="carousel-button" id="prevBtn">❮</button>
+        <div class="slides-container" >
+            <div class="slide"><img src="./imagenes/muñeca-1.png" alt="imagen de una figura en tamaño HQS lolita" class="image"></div>
+            <div class="slide"><img src="./imagenes/figura-2.png" alt="imagen de una figura en tamaño HQS anime" class="image"></div>
+            <div class="slide"><img src="./imagenes/rem-angel.png" alt="imagen caja rem versión ángel en tamaño HQS" class="image"></div>
+            <div class="slide"><img src="./imagenes/rem-orejas.png" alt="imagen caja rem versión conejo en tamaño HQS" class="image"></div>
+            <div class="slide"><img src="./imagenes/rem-playa.png" alt="imagen caja rem versión playa en tamaño HQS" class="image"></div>
+        </div>
+        <button class="carousel-button" id="nextBtn">❯</button>
+    </div>
+    
+    <script src="slider.js"></script>
+ 
+    <p class="text-inicio">Las mejores ofertas del mercado</p>
+ </section>
+ 
+<section class="section-b-inicio">
+   
+    <div class="img-ofertas">
 
-      </main>
+        <img src="./imagenes/rem-orejas.png" class="image-links" alt="">
+        <a href="./Ofertas langpage.html"><button class="btn-image">OFERTAS</button></a>
+    </div>
+
+    <div class="img-ofertas">
+        <img src="./imagenes/ram.jpg" class="image-links" alt="">
+        <a href="./Ofertas langpage.html"><button class="btn-image">Figuras Funko</button></a>
+    </div>
+  
+    <div class="img-ofertas">
+
+        <img src="./imagenes/muñeca-1.png" class="image-links" alt="">
+        <a href="./Ofertas langpage.html"><button class="btn-image">Figuras HQS</button></a>
+    </div>
+
+</section>
 
     <footer>
-      <div class="footer-1">
-        <figure>
-          <img src="./imagenes/figura-coneja.png"
-              alt="La imagen es un personaje de anime saludando con una mano"
-              class="figure-rabbit">
-
-        </figure>
-
         <div class="vectores">
 
           <svg class="social-media" xmlns="http://www.w3.org/2000/svg"
@@ -89,6 +112,8 @@
         </div>
       </div>
     </footer>
+    <script src="hamburguer.js">
 
-  </body>
+    </script>
+</body>
 </html>

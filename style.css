@@ -1,145 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Inria Serif';
- 
-  
+  font-family: 'Inria Serif';  
 }
 
-/*.landingP {
-  height: 80vh;
-}*/
-
-/* HEADER*/
-header {
-  display: flex;
-  justify-content: space-between;
-  ;
-  align-items: center;
-  height: 10rem;
-}
-.star {
-  width: 7.5rem;
-  height: 7.375rem;
-  flex-shrink: 0;
-  float: left;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.header-text {
-  font-size: 80px;
-  font-family: 'Irish Grover';
-  background: linear-gradient(180deg, #E319E7 0%, #000 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  margin-right: 129px;
-  font-style: normal;
-  font-weight: 100;
-  line-height: normal;
-
-}
-
-.navLinks {
-  list-style: none;
-  display: flex;
-  font-family: 'Inria Serif';
-}
-
-.navLinks li {
-  margin-left: 16px;
-}
-
-.navLinks li a {
-  text-decoration: none;
-
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 30px;
-
-}
-
-.navLinks li:hover {
-  background-color: aqua;
-}
-
-.not-look {
-  display: none !important;
-
-}
-
-/* ----------------- ESTILOS MENU HAMBURGUESA ----------------- */
-.look-container {
-  position: relative;
-}
-
-.look-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  background-color: rgba(0, 109, 119, 0.9);
-  /* Fondo semi-transparente */
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  z-index: 999;
-  /* Ajusta el índice z para asegurarte de que esté por encima de otros elementos */
-}
-
-.look-list li {
-  padding: 20px;
-  text-align: center;
-  font-size: 1.5em;
-  /* Aumenta el tamaño de la fuente en un 50% */
-  font-weight: bold;
-  /* Aumenta el grosor de la fuente */
-  position: relative;
-  color: #fff;
-  /* Color del texto */
-}
-
-.look-list li:hover {
-  background: linear-gradient(to bottom, rgba(226, 149, 120, 0.9), rgba(226, 149, 120, 0.6));
-}
-
-.look-list li::before,
-.look-list li::after {
-  content: "";
-  position: absolute;
-  height: 5px;
-  /* Grosor de las líneas de sombra */
-  background-color: rgba(226, 149, 120, 0.5);
-  /* Color semi-transparente basado en #e29578 para las sombras chulas */
-  width: calc(100% + 40px);
-  /* Ancho ajustado para extenderse más allá del contenido del li */
-  left: -20px;
-  /* Desplaza a la izquierda la mitad del ancho adicional */
-}
-
-.look-list li::before {
-  top: 0;
-}
-
-.look-list li::after {
-  bottom: 0;
-}
-
-.not-look:hover {
-  cursor: pointer;
-  background-color: #83C5BE;
-  padding: 10px;
-  border-radius: 10px;
-}
-
-/* ----------------- FINAL ESTILOS MENU HAMBURGUESA ----------------- */
 /*---------------------------------- FIN HEADER------------------------------*/
 
 body {
@@ -223,42 +87,23 @@ body {
   align-items: center;
 }
 
-
-
-
-
 hr {
   position: absolute;
-  top: 88px;
+  top: 100px;
   right: 0px;
   width: 50%;
-
 }
-
-
-
-
-
- /*article {
- padding-left: 10px;
-}*/
-
-
-
-
-
-
-
-
-
 
 .form {
-
-  top: 16.938rem;
-  left: 50%;
+  top: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 70rem;
+  height: 30rem;
+  margin-left: 10%;
 }
 
-.formGroup {
+.form-login {
   color: #000;
   text-align: justify;
   font-family: 'Inria Serif';
@@ -268,9 +113,16 @@ hr {
   line-height: normal;
   background-color: #FFF;
   border: #000 solid;
-  margin-left: 21.875rem;
   display: inline-block;
   padding: 50px 70px 50px 90px;
+}
+
+.input-form {
+  padding-right: 75px;
+  }
+.text-form {
+  color: #000;
+  font-size: 20px;
 }
 
 .buttonSend {
@@ -284,10 +136,9 @@ hr {
   font-size: 1.25rem;
   border-radius: 0px;
   margin-right: 0.313rem;
-
 }
 
-.textAboutUs {
+.text-about-us {
   color: #000;
   text-align: justify;
   font-family: Inria Serif;
@@ -303,10 +154,96 @@ hr {
   padding-left: 3.125rem;
 }
 
-.mikuAboutUs {
+.miku-ears {
   width: 25.438rem;
   height: 33rem;
   margin-left: 4.5rem;
+}
+
+.article-about-us{
+  width: 100%;
+  height: 100%;
+}
+/* ---------------SLIDER-----------*/
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin: 5rem 5rem;
+  width: 15rem;
+  background:#858585 ;
+  border-radius: 30px;
+}
+
+.slides-container {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+.image{
+  height: 20rem;
+}
+
+.slide {
+  flex: 20%; /* Tamaño deseado para las imágenes */
+  max-height: 20rem; /* Altura máxima para las imágenes */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  color: black;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 0;
+  z-index: 200;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+.section-a-inicio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.text-inicio{
+  font-size: 50px;
+  color: purple;
+  text-shadow: 2px 2px 4px black;
+}
+
+.section-b-inicio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.image-links{
+  width: 30%;
+}
+.img-ofertas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.btn-image{
+  border: none;
+  background-color: #dc6bc7;
+  color: #FFFFFF;
+  width: 9rem;
 }
 
 /* FOOTER*/
@@ -322,6 +259,7 @@ hr {
   height: 27.563rem;
   margin-left: 100%;
   margin-bottom: 0rem;
+  margin-top: 1rem;
 }
 
 .vectores {
@@ -340,22 +278,11 @@ hr {
 
 @media screen and (max-width: 1023px) {
 
-  /*HEADER*/
-  header {
-    width: auto;
-  }
-  .header-text {
-    font-size: 4rem;
-   /* margin-right: 129px;*/
-   /* font-weight: 100;*/  
-  }
-
+  
   .discount {
     text-align: justify;
     font-size: 30px;
-  /*  font-weight: 400;*/
     margin-left: 2rem;
-   /* display: inline-block;*/
     padding: 34px;
     width: 45%;
   }
@@ -369,17 +296,15 @@ hr {
     width: 7.5rem;
     height: 7.375rem;
     position: absolute;
-   /* margin-right: 2rem;*/
-   top: 427px;
-   right: 2rem;
-  z-index: 30;
+    top: 427px;
+    right: 2rem;
+    z-index: 30;
   }
   
   .miku-oferta {
     width: 20rem;
     height: 21rem;
-   margin-right: 5rem;
-
+    margin-right: 5rem;
   }
 
   .main-landing-page {
@@ -387,28 +312,72 @@ hr {
     justify-content: space-between;
     align-items: center;
     height: 30rem;
-    
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    width: 53rem;
+    height: 21rem;
+    margin-bottom: 2rem;
+  }
+  
+  .form-login {
+  font-size: 20px;
+  display: inline-block;
+  padding: 20px 40px 20px 60px
+  }
+
+  .input-form {
+    padding-right: 75px;
+  }
+
+  .text-form {
+    color: #000;
+    font-size: 15px;
   }
 
 
-  .show {
-    display: block !important;
-    font-size: xx-large;
+
+  .miku-ears {
+    width: 20rem;
+    height: 28rem;
+    margin-left: 1rem;
+  }
+  .article-about-us{
+    width: 100%;
+    height: 100%;
   }
 
-  .icons-container {
-    display: none;
-  }
-
-  ul {
-    display: none;
-  }
+.main-about-us{
+  display: flex;
+  flex-direction: column;
+}
+.text-about-us{
+  margin: 1rem 1rem;
+  font-size: 20px;
+}
+ 
 
   .logo-container {
     position: absolute;
     margin-left: 10px;
     margin-top: 50px;
   }
+
+  .section-a-inicio{
+    display: flex;
+    flex-direction: column;
+  }
+  .text-inicio{
+    font-size: 40px;
+    }
+
+  .section-b-inicio{
+    display: flex;
+    flex-direction: column;
+  }
+
 
   /* FOOTER*/
 
@@ -448,6 +417,11 @@ hr {
    /* margin-right: 129px;*/
    /* font-weight: 100;*/  
   }
+  .show {
+    display: block !important;
+    font-size: xx-large;
+  }
+
   .main-landing-page {
     display: flex;
     flex-direction: column-reverse;
@@ -474,6 +448,40 @@ hr {
   margin-left: 20%;
   padding: 1rem;
 }
+
+.form {
+display: flex;
+justify-content: center;
+width: 22rem;
+height: 21rem;
+margin-bottom: 2rem;
+}
+
+.input-form {
+padding-right: 75px;
+}
+
+.text-form {
+  color: #000;
+  font-size: 10px;
+}
+.article-about-us{
+  margin-bottom: 2rem;
+}
+.section-a-inicio{
+  display: flex;
+  flex-direction: column-reverse;
+}
+.text-inicio{
+  margin-top: 2rem;
+  font-size: 20px;
+}
+
+.section-b-inicio{
+  display: flex;
+  flex-direction: column;
+}
+
   /* FOOTER*/
 
   .footer-1 {
@@ -495,10 +503,6 @@ hr {
 
   .vectores {
     margin-bottom: 1rem;
-    /* margin-right: 1rem;
-/*  display: flex;
-  justify-content: flex-end;
-/* margin-left: 5px;*/
   }
 
   .social-media {
