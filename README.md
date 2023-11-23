@@ -15,3 +15,5 @@ Estructura de Estilos CSS
 Para mantener una organización clara y modularidad en nuestros estilos, hemos dividido el CSS en dos archivos principales:
 navfot.css: Contiene estilos específicos para el encabezado y otros elementos de la página.
 styles.css: Incluye estilos para el resto de la página, como el cuerpo, formularios, imágenes y texto.
+
+Enlace al figma: https://www.figma.com/file/jFE1dJZFaTHnpTfv4wco0W/Untitled?type=design&node-id=0%3A1&mode=design&t=pDlCTCvGybeBVfuP-1
