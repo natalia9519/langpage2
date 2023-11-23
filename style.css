@@ -16,7 +16,6 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 30rem;
-  
 }
 
 .discount {
@@ -209,9 +208,7 @@ hr {
   right: 0;
 }
 
-.active {
-  background-color: #717171;
-}
+
 .section-a-inicio{
   display: flex;
   flex-direction: row;
@@ -245,6 +242,28 @@ hr {
   color: #FFFFFF;
   width: 9rem;
 }
+/* CORAZÓN */
+.heart-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.heart-icon {
+  color: #0f0707;
+  transition: transform 0.3s ease-in-out;
+  border: #000;
+}
+
+.heart-icon.active {
+  transform: scale(1.2);
+  color: #e74c3c;
+  
+}
+/* FIN CORAZÓN */
 
 /* FOOTER*/
 
@@ -377,7 +396,10 @@ hr {
     display: flex;
     flex-direction: column;
   }
-
+.img-ofertas{
+  width: 100%;
+  top: 2rem;
+}
 
   /* FOOTER*/
 

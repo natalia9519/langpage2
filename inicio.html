@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="navfot.css">
+    <link rel="shortcut icon" href="./imagenes/ESTRELLA.png">
     <script src="https://kit.fontawesome.com/60be6c00de.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Muñecas frikis rosas</title>
 </head>
 <body>
     <header>
@@ -18,7 +19,7 @@
         <hr>
         <div class="nav-links">
             <ul class="nav1">
-                <li><a href="./inicio.html">Inicioa</a></li>
+                <li><a href="./inicio.html">Inicio</a></li>
                 <li><a href="./nosotros.html">Nosotros</a></li>
                 <li><a href="./Ofertas langpage.html">Ofertas</a></li>
                 <li><a href="./Ofertas langpage.html">Registro</a></li>
@@ -38,45 +39,47 @@
         </div>
 
     </header>
-<section class="section-a-inicio">
-    
-    <div class="carousel" >
-        <button class="carousel-button" id="prevBtn">❮</button>
-        <div class="slides-container" >
-            <div class="slide"><img src="./imagenes/muñeca-1.png" alt="imagen de una figura en tamaño HQS lolita" class="image"></div>
-            <div class="slide"><img src="./imagenes/figura-2.png" alt="imagen de una figura en tamaño HQS anime" class="image"></div>
-            <div class="slide"><img src="./imagenes/rem-angel.png" alt="imagen caja rem versión ángel en tamaño HQS" class="image"></div>
-            <div class="slide"><img src="./imagenes/rem-orejas.png" alt="imagen caja rem versión conejo en tamaño HQS" class="image"></div>
-            <div class="slide"><img src="./imagenes/rem-playa.png" alt="imagen caja rem versión playa en tamaño HQS" class="image"></div>
+    <section class="section-a-inicio">
+        
+        <div class="carousel" >
+            <button class="carousel-button" id="prevBtn">❮</button>
+            <div class="slides-container" >
+                <div class="slide"><img src="./imagenes/muñeca-1.png" alt="imagen de una figura en tamaño HQS lolita" class="image"></div>
+                <div class="slide"><img src="./imagenes/figura-2.png" alt="imagen de una figura en tamaño HQS anime" class="image"></div>
+                <div class="slide"><img src="./imagenes/rem-angel.png" alt="imagen caja rem versión ángel en tamaño HQS" class="image"></div>
+                <div class="slide"><img src="./imagenes/rem-orejas.png" alt="imagen caja rem versión conejo en tamaño HQS" class="image"></div>
+                <div class="slide"><img src="./imagenes/rem-playa.png" alt="imagen caja rem versión playa en tamaño HQS" class="image"></div>
+            </div>
+            <button class="carousel-button" id="nextBtn">❯</button>
         </div>
-        <button class="carousel-button" id="nextBtn">❯</button>
-    </div>
+        
+        <script src="slider.js"></script>
     
-    <script src="slider.js"></script>
- 
-    <p class="text-inicio">Las mejores ofertas del mercado</p>
- </section>
- 
-<section class="section-b-inicio">
-   
-    <div class="img-ofertas">
+        <p class="text-inicio">Las mejores ofertas del mercado</p>
+        <button id="heartButton" class="heart-button">
+            <span class="heart-icon" id="heartIcon">&#10084;</span>
+            <span id="likeCount">0</span>
+          </button>
+    </section>
+    
+    <section class="section-b-inicio">
+    
+        <div class="img-ofertas">
+            <img src="./imagenes/rem-orejas.png" class="image-links" alt="imagen caja rem versión conejo en tamaño HQS">
+            <a href="./Ofertas langpage.html"><button class="btn-image">OFERTAS</button></a>
+        </div>
 
-        <img src="./imagenes/rem-orejas.png" class="image-links" alt="">
-        <a href="./Ofertas langpage.html"><button class="btn-image">OFERTAS</button></a>
-    </div>
+        <div class="img-ofertas">
+            <img src="./imagenes/ram.jpg" class="image-links" alt="busto figura ram">
+            <a href="./Ofertas langpage.html"><button class="btn-image">Figuras Funko</button></a>
+        </div>
+    
+        <div class="img-ofertas">
+            <img src="./imagenes/muñeca-1.png" class="image-links" alt="imagen de una figura en tamaño HQS lolita">
+            <a href="./Ofertas langpage.html"><button class="btn-image">Figuras HQS</button></a>
+        </div>
 
-    <div class="img-ofertas">
-        <img src="./imagenes/ram.jpg" class="image-links" alt="">
-        <a href="./Ofertas langpage.html"><button class="btn-image">Figuras Funko</button></a>
-    </div>
-  
-    <div class="img-ofertas">
-
-        <img src="./imagenes/muñeca-1.png" class="image-links" alt="">
-        <a href="./Ofertas langpage.html"><button class="btn-image">Figuras HQS</button></a>
-    </div>
-
-</section>
+    </section>
 
     <footer>
         <div class="vectores">
@@ -112,8 +115,11 @@
         </div>
       </div>
     </footer>
-    <script src="hamburguer.js">
 
+    <script src="hamburguer.js">
     </script>
+    <script src="heart.js">
+    </script>
+
 </body>
 </html>
