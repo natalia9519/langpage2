@@ -4,13 +4,13 @@
   font-family: 'Inria Serif';  
 }
 
-/*---------------------------------- FIN HEADER------------------------------*/
-
 body {
   background: linear-gradient(#EE70D1 0%, #FFF 100%);
   background-repeat: no-repeat;
 }
 
+
+/* ----------- PÁGINA OFERTAS LANGPAGE -------------*/
 .main-landing-page {
   display: flex;
   justify-content: space-between;
@@ -79,12 +79,7 @@ body {
   height: 26em;
   margin-right: 2rem;  
 }
-
-.main-about-us {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* ----------- FIN PÁGINA OFERTAS LANGPAGE -------------*/
 
 hr {
   position: absolute;
@@ -92,6 +87,64 @@ hr {
   right: 0px;
   width: 50%;
 }
+
+/* ----------- PÁGINA NOSOTROS -------------*/
+
+.main-about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.miku-ears {
+  width: 25.438rem;
+  height: 33rem;
+  margin-left: 4.5rem;
+}
+
+.article-about-us{
+  width: 100%;
+  height: 100%;
+}
+
+.text-about-us {
+  color: #000;
+  text-align: justify;
+  font-family: Inria Serif;
+  font-size: 1.063rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background-color: #FFF;
+  border: #000 solid;
+  border-radius: 0px;
+  margin-right: 6.25rem;
+  padding: 2.125rem;
+  padding-left: 3.125rem;
+}
+/* MODAL */
+#modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#imagen_modal {
+  max-width: 80%;
+  max-height: 80%;
+  cursor: pointer;
+}
+
+/* -----------FIN PÁGINA NOSOTROS -------------*/
+
+/* ----------- PÁGINA FORMULARIO -------------*/
 
 .form {
   top: 1rem;
@@ -118,7 +171,8 @@ hr {
 
 .input-form {
   padding-right: 75px;
-  }
+}
+
 .text-form {
   color: #000;
   font-size: 20px;
@@ -137,33 +191,18 @@ hr {
   margin-right: 0.313rem;
 }
 
-.text-about-us {
-  color: #000;
-  text-align: justify;
-  font-family: Inria Serif;
-  font-size: 1.063rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  background-color: #FFF;
-  border: #000 solid;
-  border-radius: 0px;
-  margin-right: 6.25rem;
-  padding: 2.125rem;
-  padding-left: 3.125rem;
-}
+/* -----------FIN PÁGINA FORMULARIO -------------*/
 
-.miku-ears {
-  width: 25.438rem;
-  height: 33rem;
-  margin-left: 4.5rem;
-}
+/* ----------- PÁGINA INICIO -------------*/
 
-.article-about-us{
-  width: 100%;
-  height: 100%;
-}
 /* ---------------SLIDER-----------*/
+.section-a-inicio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .carousel {
   position: relative;
   overflow: hidden;
@@ -171,20 +210,6 @@ hr {
   width: 15rem;
   background:#858585 ;
   border-radius: 30px;
-}
-
-.slides-container {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-  width: 100%;
-}
-.image{
-  height: 20rem;
-}
-
-.slide {
-  flex: 20%; /* Tamaño deseado para las imágenes */
-  max-height: 20rem; /* Altura máxima para las imágenes */
 }
 
 .carousel-button {
@@ -204,44 +229,32 @@ hr {
   z-index: 200;
 }
 
+.slides-container {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  flex: 20%; /* Tamaño deseado para las imágenes */
+  max-height: 20rem; /* Altura máxima para las imágenes */
+}
+
+.image{
+  height: 20rem;
+}
+
 #nextBtn {
   right: 0;
 }
 
-
-.section-a-inicio{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
 .text-inicio{
   font-size: 50px;
   color: purple;
   text-shadow: 2px 2px 4px black;
 }
+/* ---------------FIN SLIDER-----------*/
 
-.section-b-inicio{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.image-links{
-  width: 30%;
-}
-.img-ofertas{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 30%;
-}
-
-.btn-image{
-  border: none;
-  background-color: #dc6bc7;
-  color: #FFFFFF;
-  width: 9rem;
-}
 /* CORAZÓN */
 .heart-button {
   background-color: transparent;
@@ -263,9 +276,37 @@ hr {
   color: #e74c3c;
   
 }
+
 /* FIN CORAZÓN */
 
-/* FOOTER*/
+.section-b-inicio{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.img-ofertas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.image-links{
+  width: 30%;
+}
+
+.btn-image{
+  border: none;
+  background-color: #dc6bc7;
+  color: #FFFFFF;
+  width: 9rem;
+}
+
+/* -----------FIN PÁGINA INICIO -------------*/
+
+
+/*------------------ FOOTER------------------*/
 
 .footer-1 {
   display: flex;
@@ -293,7 +334,7 @@ hr {
   padding-left: 20px;
 }
 
-/* FIN FOOTER*/
+/*------------------FIN FOOTER---------------*/
 
 @media screen and (max-width: 1023px) {
 
@@ -356,13 +397,11 @@ hr {
     font-size: 15px;
   }
 
-
-
-  .miku-ears {
+.miku-ears {
     width: 20rem;
     height: 28rem;
     margin-left: 1rem;
-  }
+}
   .article-about-us{
     width: 100%;
     height: 100%;
@@ -377,13 +416,11 @@ hr {
   font-size: 20px;
 }
  
-
-  .logo-container {
+.logo-container {
     position: absolute;
     margin-left: 10px;
     margin-top: 50px;
-  }
-
+}
   .section-a-inicio{
     display: flex;
     flex-direction: column;
@@ -419,8 +456,6 @@ hr {
   .vectores {
     margin-bottom: 1rem;
     margin-right: 1rem;
-   /* display: flex;*/
-    /*justify-content: flex-end;*/
     margin-left: 1rem;
   }
 
@@ -434,11 +469,11 @@ hr {
 }
 
 @media screen and (max-width: 767px) {
+
   .header-text {
     font-size: 3rem;
-   /* margin-right: 129px;*/
-   /* font-weight: 100;*/  
   }
+
   .show {
     display: block !important;
     font-size: xx-large;
@@ -451,11 +486,13 @@ hr {
     height: 50rem;
     align-items: center;
   }
+
 .position-1{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .start-2 {
  left: 5rem;
 }
@@ -487,13 +524,16 @@ padding-right: 75px;
   color: #000;
   font-size: 10px;
 }
+
 .article-about-us{
   margin-bottom: 2rem;
 }
+
 .section-a-inicio{
   display: flex;
   flex-direction: column-reverse;
 }
+
 .text-inicio{
   margin-top: 2rem;
   font-size: 20px;
@@ -520,7 +560,6 @@ padding-right: 75px;
     margin-left: 5%;
     margin-bottom: 0rem;
     align-items: center;
-   
   }
 
   .vectores {

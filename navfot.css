@@ -66,8 +66,7 @@
   .hidden-list {
     list-style-type: none;
     padding: 0;
-
-    background-color: rgba(113, 0, 119, 0.9); /* Fondo semi-transparente */
+    background-color: rgba(113, 0, 119, 0.9); 
     position: fixed;
     top: 0;
     left: 0;
@@ -80,10 +79,10 @@
   .hidden-list li {
     padding: 20px;
     text-align: center;
-    font-size: 1.5em; /* Aumenta el tamaño de la fuente en un 50% */
-    font-weight: bold; /* Aumenta el grosor de la fuente */
+    font-size: 1.5em; 
+    font-weight: bold; 
     position: relative;
-    color: #fff; /* Color del texto */
+    color: #fff; 
   }
   
   .hidden-list li:hover {
@@ -94,8 +93,8 @@
   .hidden-list li::after {
     content: "";
     position: absolute;
-    height: 5px; /* Grosor de las líneas de sombra */
-    background-color: rgba(226, 149, 120, 0.5); /* Color semi-transparente basado en #e29578 para las sombras chulas */
+    height: 5px; 
+    background-color: rgba(226, 149, 120, 0.5); 
     width: calc(100% + 40px); /* Ancho ajustado para extenderse más allá del contenido del li */
     left: -20px; /* Desplaza a la izquierda la mitad del ancho adicional */
   }
