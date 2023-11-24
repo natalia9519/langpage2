@@ -425,9 +425,9 @@ hr {
     display: flex;
     flex-direction: column;
   }
-  .text-inicio{
-    font-size: 40px;
-    }
+.text-inicio{
+  font-size: 40px;
+  }
 
   .section-b-inicio{
     display: flex;
@@ -504,7 +504,7 @@ hr {
 }
 
 .button-registration .b-regis {
-  margin-left: 20%;
+  margin-left: 15%;
   padding: 1rem;
 }
 
